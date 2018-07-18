@@ -1,0 +1,14 @@
+{
+ "manifest_version": 2,
+ "name": "White Rabbit",
+ "description": "Extract audio from mp4 videos on YouTube",
+ "version": "1.0.0",
+ "icons": {"19": "images/red-rabbit-19.png"},
+ "browser_action": {
+    "default_icon": "images/red-rabbit-19.png",
+    "default_popup": "popup.html"
+  },
+ "permissions": ["tabs"],
+ "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'"
+
+}
