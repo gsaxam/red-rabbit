@@ -1,0 +1,127 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>Red Rabbit</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+    crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <style>
+    /* Modal Structure */
+    html,
+    body {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 14px;
+      margin: 0;
+      min-height: 180px;
+      width: 300px;
+    }
+    h1 {
+      font-family: 'Menlo', monospace;
+      font-size: 22px;
+      font-weight: 400;
+      margin: 0;
+      color: #2f5876;
+    }
+    a:link,
+    a:visited {
+      color: #000000;
+      outline: 0;
+      text-decoration: none;
+    }
+    img {
+      width: 30px;
+    }
+    .modal-header {
+      align-items: center;
+      border-bottom: 0.5px solid #dadada;
+    }
+    .modal-content {
+      padding: 20 22px;
+    }
+    .modal-icons {
+      border-top: 0.5px solid #dadada;
+      height: 50px;
+      width: 100%;
+    }
+    .logo {
+      padding: 16px;
+    }
+    .logo-icon {
+      vertical-align: text-bottom;
+      margin-right: 12px;
+    }
+    .version {
+      color: #444;
+      font-size: 18px;
+    }
+    .flex-container {
+      display: flex;
+      /* justify-content: space-between; */
+      padding: 10px 22px;
+    }
+    .flex {
+      opacity: 1;
+      transition: opacity 0.2s ease-in-out;
+      width: 60px;
+    }
+    .flex:hover {
+      opacity: 0.4;
+    }
+    .flex .fa {
+      font-size: 40px;
+      color: #2f5876;
+    }
+    .newline {
+      margin-top: 10px;
+    }
+
+    .h-spacer {
+      margin-left: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+  <div class="modal-header">
+    <h1 class="logo">
+      <img class="logo-icon" src="images/red-rabbit-19.png">Red Bunny
+    </h1>
+  </div>
+  <form>
+  <div class="form-group">
+    <div class="newline"></div>
+    <label for="userName">username</label>
+    <input type="text" class="form-control" id="username" placeholder="Enter username" value="">
+  </div>
+  <div class="form-group">
+    <label for="collection">collection</label>
+    <input type="text" class="form-control" id="collection" placeholder="Enter collection" value="">
+  </div>
+
+  <button type="button" id="submit" class="btn btn-primary">Submit</button><label class="h-spacer" id="result" for="collection"></label>
+</form>
+<div class="newline"></div>
+</div>
+  <div class="modal-content">
+  </div>
+  <div class="modal-icons">
+    <div class="flex-container">
+      <div class="flex">
+        <a href="http://ghimire.org" target="_blank">
+          <i class="fa fa-globe"></i>
+        </a>
+      </div>
+      <div class="flex">
+        <a href="https://www.github.com/gsaxam" target="_blank">
+          <i class="fa fa-github"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="popup.js"></script>
+</html>
